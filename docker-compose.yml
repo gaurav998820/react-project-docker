@@ -4,6 +4,7 @@ services:
     web:
         tty: true # Terminal
         # We are defining the custom Dockerfile
+        image: gaurav998820/react-project:prod
         build:
             context: .
             dockerfile: Dockerfile_dev
