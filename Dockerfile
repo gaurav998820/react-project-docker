@@ -23,6 +23,6 @@ RUN npm run build
 # Copy the build directory to Nginx directory
 
 # Fetch nginx image from docker hub
-FROM nginx
+FROM nginx:alpine
 EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
