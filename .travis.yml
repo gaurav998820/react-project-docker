@@ -14,14 +14,14 @@ script:
 deploy:
     - provider: elasticbeanstalk
       region: ap-south-1 # Specify your region
-      app: "docker-react-project_1" # Copy it from Elastic Beanstalk dashboard
-      env: "DockerReactProject1-env" # Copy it from Elastic Beanstalk dashboard
+      app: "react-project-docker-staging" # Copy it from Elastic Beanstalk dashboard
+      env: "ReactProjectDockerStaging-env" # Copy it from Elastic Beanstalk dashboard
       bucket_name: "elasticbeanstalk-ap-south-1-389816126258"
       bucket_path: "docker" #Its a folder inside S3 bucket if not available then on push it will automatically created
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $AWS_SECRET_KEY
       on:
-          branch: master
+          branch: staging
     - provider: elasticbeanstalk
       region: ap-south-1 # Specify your region
       app: "docker-react-project_1" # Copy it from Elastic Beanstalk dashboard
@@ -31,4 +31,4 @@ deploy:
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $AWS_SECRET_KEY
       on:
-          branch: staging
+          branch: master
