@@ -8,11 +8,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload by Gaurav.
+          Edit <code>src/App.js</code> and save to reload by Thanks Gaurav.
         </p>
-        <p>
-                                     Thanks.. Gaurav
-        </p>
+        <p>Testing staging deployment feature_a </p>
         <a
           className="App-link"
           href="https://reactjs.org"
